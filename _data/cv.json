@@ -2,15 +2,11 @@
   "basics": {
     "name": "Anu Jajodia",
     "email": "asjajodia@gmail.com",
-    "phone": "",
+    "phone": "617-872-0568",
     "website": "https://ajajodia.github.io",
     "summary": "Statistics at Carleton College. Working on ML for bioacoustics at UCSD",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Northfield",
-      "countryCode": "MN",
-      "region": ""
+      "city": "Northfield, MN"
     },
     "profiles": [
       {
@@ -25,128 +21,100 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/ajajodia"
+        "username": "ajajodia",
+        "url": "https://github.com/"
       }
     ]
   },
-  "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "Carleton College",
+      "area": "Bachelor of Arts in Statistics",
+      "studyType": "Bachelor of Arts",
+      "startDate": "2022",
+      "endDate": "2026",
+      "gpa": "3.81",
+      "location": "Northfield, MN",
+      "courses": [
+        "Deep Learning",
+        "Optimization", 
+        "Statistical Inference",
+        "Microeconomics",
+        "Statistical Consulting",
+        "Probability"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Budapest Semesters in Mathematics/Aquincum Institute of Technology",
+      "area":"Math and CS Study Abroad",
+      "startDate": "2024",
+      "endDate": "2024",
+      "gpa": "4.00",
+      "courses": [
+        "Cybersecurity",
+        "Deep Learning",
+        "Theory of Computing"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "work": [
+    {
+      "name": "UC San Diego",
+      "position": "Summer Researcher, UC San Diego",
+      "startDate": "2024-06",
+      "endDate": "",
+      "highlights": [
+        "Engaged in cross-organizational partnerships with National Geographic and San Diego Zoo, coordinating project timelines and deliverables",
+        "Led development of interdisciplinary solutions for large-scale data processing and modeling",
+        "Collaborated with researchers to integrate statistics and computer science with domain expertise",
+        "Presented findings to researchers at Scripps Institute, National Geographic and the San Diego Zoo"
+      ]
+    },
+    {
+      "name": "Community Action Center Partnership",
+      "position": "Statistical Consultant, Community Action Center of Northfield",
+      "startDate": "2025-03",
+      "endDate": "2025-06",
+      "highlights": [
+        "Conducted comprehensive demographic and operational analysis to support policy development",
+        "Managed data collection and analysis processes for 30,000+ participant records, ensuring data quality and integrity",
+        "Wrote linear mixed-effects model to analyze effects of policy changes",
+        "Communicated findings to Community Action Center leadership"
+      ]
+    },
+    {
+      "name": "Metis Research",
+      "position": "Data Science Intern, Metis Ricerche",
+      "location": "Turin, Italy",
+      "startDate": "2024-06",
+      "endDate": "2024-08",
+      "highlights": [
+        "Supported senior analyst team in healthcare system efficiency analysis and improvement initiatives",
+        "Processed and analyzed large-scale datasets (2+ million records) to identify operational bottlenecks and opportunities",
+        "Delivered presentations in Italian to representatives from academia and government"
+      ]
+    }
+  ],
+  "skills": [
+    {"name": "Tools", "keywords": ["Python (Pytorch, numpy)", "R (dplyr, ggplot, lme4)", "Julia", "SQL", "Java"]},
+    {"name": "Lanuguages", "keywords": ["English (fluent)", "Italian (conversational)"]}
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "FishSense Mobile: A Mobile Device App for On-Deck Fisheries Management Operations",
+      "publisher": "IEEE",
+      "releaseDate": "2025",
+      "website": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=SpIq9gUAAAAJ&citation_for_view=SpIq9gUAAAAJ:u-x6o8ySG0sC",
+      "summary": ""
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
+      "name": "Engineers for Exploration San Diego Zoo Presentation",
+      "event": "Beckmann Center",
+      "date": "2025-8-14",
+      "location": "Escondido, CA, USA",
       "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
     }
   ]
 }
