@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Anu Jajodia",
+    "email": "asjajodia@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://ajajodia.github.io",
+    "summary": "Statistics at Carleton College. Working on ML for bioacoustics at UCSD",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Northfield",
+      "countryCode": "MN",
       "region": ""
     },
     "profiles": [
@@ -26,7 +26,7 @@
       {
         "network": "GitHub",
         "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "url": "https://github.com/ajajodia"
       }
     ]
   },
