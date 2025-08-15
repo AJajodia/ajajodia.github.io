@@ -60,38 +60,51 @@
   "work": [
     {
       "name": "UC San Diego",
-      "position": "Summer Researcher, UC San Diego",
+      "position": "Undergraduate Researcher, Computer Science",
       "startDate": "2024-06",
-      "endDate": "",
+      "endDate": "Present",
       "highlights": [
-        "Engaged in cross-organizational partnerships with National Geographic and San Diego Zoo, coordinating project timelines and deliverables",
-        "Led development of interdisciplinary solutions for large-scale data processing and modeling",
-        "Collaborated with researchers to integrate statistics and computer science with domain expertise",
-        "Presented findings to researchers at Scripps Institute, National Geographic and the San Diego Zoo"
+        "Planned and developed a Python package for exploration of unlabeled ecoacoustic data",
+        "Engineered models for unsupervised clustering and event separation in audio data via knowledge graphs",
+        "Utilized autoencoded audio vector embeddings for knowledge discovery and latent semantic analysis",
+        "Collaborated with National Geographic and San Diego Zoo on machine learning for conservation"
       ]
     },
     {
-      "name": "Community Action Center Partnership",
-      "position": "Statistical Consultant, Community Action Center of Northfield",
+      "name": "Carleton College/Community Action Center",
+      "position": "Statistical Consultant",
       "startDate": "2025-03",
       "endDate": "2025-06",
       "highlights": [
-        "Conducted comprehensive demographic and operational analysis to support policy development",
-        "Managed data collection and analysis processes for 30,000+ participant records, ensuring data quality and integrity",
-        "Wrote linear mixed-effects model to analyze effects of policy changes",
-        "Communicated findings to Community Action Center leadership"
+        "Conducted demographic analysis of food bank participant records to inform policy decisions",
+        "Cleaned data and generated sample statistics for family demographics using dplyr in R",
+        "Applied linear mixed effects models to determine impact of policy changes on food consumption",
+        "Reported findings and provided actionable insights to CAC operations manager"
+      ]
+    },
+    {
+      "name": "Carleton College/Alfred Renyi Institute",
+      "position": "Research Assistant",
+      "startDate": "2024-12",
+      "endDate": "2025-03",
+      "highlights": [
+        "Studied hyperparameter optimization in LLMs using Gaussian Processes and reinforcement learning",
+        "Conducted literature review of Bayesian Inference methods, including LoRA and Population-Based Bandits",
+        "Developed, tested, and presented prototype CNNs and LLMs",
+        "Applied kernel methods for covariance to optimize computational processes"
       ]
     },
     {
       "name": "Metis Research",
-      "position": "Data Science Intern, Metis Ricerche",
+      "position": "Data Science Intern",
       "location": "Turin, Italy",
       "startDate": "2024-06",
       "endDate": "2024-08",
       "highlights": [
-        "Supported senior analyst team in healthcare system efficiency analysis and improvement initiatives",
-        "Processed and analyzed large-scale datasets (2+ million records) to identify operational bottlenecks and opportunities",
-        "Delivered presentations in Italian to representatives from academia and government"
+        "Collaborated with senior analysts on Italian healthcare system efficiency improvements",
+        "Manipulated and cleaned large healthcare datasets (2+ million records) using Pandas",
+        "Developed predictive models for appointment wait times using Scikit-Learn (linear regression, random forest, SGD)",
+        "Communicated model results to supervisors using Italian language skills and Seaborn visualizations"
       ]
     }
   ],
