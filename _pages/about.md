@@ -16,7 +16,8 @@ My previous work mostly consists of statistical consulting for social programs. 
 In my free time, I play the guitar and have discovered a passion for surfing (thanks San Diego!)
 
 ## News
-
+- **Oct 2025:** Presented at eUSR 2025
+- **Sept 2025:** Started research at the Hoopfer Lab
 - **Aug 2025:** Presented to the San Diego Zoo
 - **July 2025:** Paper accepted to IEEE Oceans
 - **June 2025:** Started research at E4E
