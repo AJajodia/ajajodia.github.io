@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: 
 permalink: /cv/
 author_profile: false
 redirect_from:
@@ -8,5 +8,6 @@ redirect_from:
 ---
 
 {% include base_path %}
+<div>
 
-<embed src="{{ site.baseurl }}/files/Jajodia_Anurag_CV.pdf" width="600" height="700" type='application/pdf'> 
+<embed src="{{ site.baseurl }}/files/Jajodia_Anurag_CV.pdf" width="800" height="1000" type='application/pdf'> 
