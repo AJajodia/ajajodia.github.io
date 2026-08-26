@@ -5,26 +5,10 @@
   <link href="https://ajajodia.github.io/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://ajajodia.github.io/" rel="alternate" type="text/html"/>
   <id>https://ajajodia.github.io/</id>
-  <updated>2026-08-26T18:51:03Z</updated>
+  <updated>2026-08-26T18:49:25Z</updated>
   
   <generator uri="https://github.com/yyahn/foliate" version="0.11.2">foliate</generator>
 
-  
-  <entry>
-    <title>Wiki</title>
-    <link href="https://ajajodia.github.io/wiki/home/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/wiki/home/</id>
-    <published>2026-08-26T18:51:03Z</published>
-    <updated>2026-08-26T18:51:03Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="welcome-to-my-wiki">Welcome to my Wiki<a class="header-anchor" href="#welcome-to-my-wiki" title="Link to this section">#</a></h1>
-<p>This is my personal knowledge base, built with <a href="https://yyahn.com/wiki/Software/foliate/">Foliate</a>. It contains notes, references, and explorations across topics I&rsquo;m learning about.</p>
-<h2 id="recent-pages">Recent Pages<a class="header-anchor" href="#recent-pages" title="Link to this section">#</a></h2>
-<ul>
-<li><a href="Probability_and_Statistics">Probability and Statistics</a> — Aug 26, 2026</li>
-</ul>]]></content>
-    
-  </entry>
   
   <entry>
     <title>Probability and Statistics</title>
