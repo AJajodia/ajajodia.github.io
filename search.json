@@ -44,7 +44,7 @@
     "path": "wiki/Probability_and_Statistics",
     "url": "/wiki/Probability_and_Statistics/",
     "content": "# Probability and Statistics\n\n## Table of Contents\n\n1. [The Basics of Probability](#the-basics-of-probability)\n2. [Randomness and Paradigms](#randomness-and-paradigms)\n3. [Random Variables](#random-variables)\n4. [Discrete Distributions](#discrete-distributions)\n5. [Continuous Distributions](#continuous-distributions)\n6. [Information Theory](#information-theory)\n7. [Frequentist Statistics](#frequentist-statistics)\n8. [Bayesian Statistics](#bayesian-statistics)\n9. [Data Visualization](#data-visual",
-    "published": "2026-08-26T18:28:16.618234+00:00",
+    "published": "2026-08-26T18:34:54.845636+00:00",
     "tags": []
   },
   {
@@ -52,7 +52,7 @@
     "path": "wiki/home",
     "url": "/wiki/home/",
     "content": "# Wiki\n\nA collection of notes and resources on various topics.\n\n- [Probability and Statistics](Probability_and_Statistics) - Comprehensive notes on probability theory and statistics",
-    "published": "2026-08-26T18:29:05.107203+00:00",
+    "published": "2026-08-26T18:32:45.860962+00:00",
     "tags": []
   }
 ]

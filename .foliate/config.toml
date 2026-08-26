@@ -30,7 +30,8 @@ ignored_folders = ["_private"]
 
 # Where to redirect the site root (/)
 # This page should exist in _homepage/ with public: true
-home_redirect = "index"
+# Leave empty to serve _homepage content directly at root
+home_redirect = ""
 
 # Special directory for homepage content (deployed to site root instead of /wiki/)
 homepage_dir = "_homepage"

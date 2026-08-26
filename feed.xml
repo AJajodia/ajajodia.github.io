@@ -5,7 +5,7 @@
   <link href="https://ajajodia.github.io//feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://ajajodia.github.io//" rel="alternate" type="text/html"/>
   <id>https://ajajodia.github.io//</id>
-  <updated>2026-08-26T18:29:05Z</updated>
+  <updated>2026-08-26T18:34:54Z</updated>
   
   <author>
     <name>Anu Jajodia</name>
@@ -15,26 +15,11 @@
 
   
   <entry>
-    <title>Wiki</title>
-    <link href="https://ajajodia.github.io/wiki/home/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/wiki/home/</id>
-    <published>2026-08-26T18:29:05Z</published>
-    <updated>2026-08-26T18:29:05Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="wiki">Wiki<a class="header-anchor" href="#wiki" title="Link to this section">#</a></h1>
-<p>A collection of notes and resources on various topics.</p>
-<ul>
-<li><a href="Probability_and_Statistics">Probability and Statistics</a> - Comprehensive notes on probability theory and statistics</li>
-</ul>]]></content>
-    
-  </entry>
-  
-  <entry>
     <title>Probability and Statistics</title>
     <link href="https://ajajodia.github.io/wiki/Probability_and_Statistics/" rel="alternate" type="text/html"/>
     <id>https://ajajodia.github.io/wiki/Probability_and_Statistics/</id>
-    <published>2026-08-26T18:28:16Z</published>
-    <updated>2026-08-26T18:28:16Z</updated>
+    <published>2026-08-26T18:34:54Z</published>
+    <updated>2026-08-26T18:34:54Z</updated>
     
     <content type="html"><![CDATA[<h1 id="probability-and-statistics">Probability and Statistics<a class="header-anchor" href="#probability-and-statistics" title="Link to this section">#</a></h1>
 <h2 id="table-of-contents">Table of Contents<a class="header-anchor" href="#table-of-contents" title="Link to this section">#</a></h2>
@@ -356,6 +341,21 @@ $$\alpha = \min\Biggl\{1, \frac{f(\mu')L(\mu'|y)}{f(\mu)L(\mu|y)} \frac{q(\mu|\m
 <h2 id="gibbs-sampling">Gibbs Sampling<a class="header-anchor" href="#gibbs-sampling" title="Link to this section">#</a></h2>
 <h1 id="variational-inference-variational-bayes">Variational Inference (Variational Bayes)<a class="header-anchor" href="#variational-inference-variational-bayes" title="Link to this section">#</a></h1>
 <h2 id="evidence-lower-bound">Evidence Lower Bound<a class="header-anchor" href="#evidence-lower-bound" title="Link to this section">#</a></h2>]]></content>
+    
+  </entry>
+  
+  <entry>
+    <title>Wiki</title>
+    <link href="https://ajajodia.github.io/wiki/home/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/wiki/home/</id>
+    <published>2026-08-26T18:32:45Z</published>
+    <updated>2026-08-26T18:32:45Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="wiki">Wiki<a class="header-anchor" href="#wiki" title="Link to this section">#</a></h1>
+<p>A collection of notes and resources on various topics.</p>
+<ul>
+<li><a href="Probability_and_Statistics">Probability and Statistics</a> - Comprehensive notes on probability theory and statistics</li>
+</ul>]]></content>
     
   </entry>
   
