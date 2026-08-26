@@ -1,3 +1,9 @@
+---
+title: "Probability and Statistics"
+public: true
+published: true
+---
+
 # Probability and Statistics
 
 ## Table of Contents
