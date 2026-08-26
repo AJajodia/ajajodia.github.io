@@ -41,7 +41,7 @@ wiki_prefix = ""
 
 # Wiki home page - used as the redirect target for /wiki/ and for recent pages list
 # Visiting /wiki/ will redirect to /wiki/{home_page}/
-home_page = "index"
+home_page = "home"
 
 # Enable incremental builds (only rebuild changed files)
 incremental = true
@@ -86,7 +86,7 @@ floating_toc = false
 # Optional: logo (image path), logo_alt (alt text)
 items = [
     { url = "/", label = "Home" },
-    { url = "/wiki/", label = "Wiki" },
+    { url = "/wiki/home/", label = "Wiki" },
     { url = "/publications/", label = "Publications" },
     { url = "/research/", label = "Research" },
     { url = "/talks/", label = "Talks" },
