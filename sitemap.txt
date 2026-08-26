@@ -1,2 +1,7 @@
-/Home/
-/Probability_and_Statistics/
+/index/
+/wiki/cv/index/
+/wiki/publications/index/
+/wiki/research/index/
+/wiki/talks/index/
+/wiki/wiki/Probability_and_Statistics/
+/wiki/wiki/index/

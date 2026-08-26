@@ -30,18 +30,18 @@ ignored_folders = ["_private"]
 
 # Where to redirect the site root (/)
 # This page should exist in _homepage/ with public: true
-home_redirect = "Home"
+home_redirect = "index"
 
 # Special directory for homepage content (deployed to site root instead of /wiki/)
 homepage_dir = "_homepage"
 
 # URL prefix for wiki content (e.g., "wiki" -> /wiki/PageName/)
 # Set to empty string "" to deploy wiki content at root
-wiki_prefix = ""
+wiki_prefix = "wiki"
 
 # Wiki home page - used as the redirect target for /wiki/ and for recent pages list
 # Visiting /wiki/ will redirect to /wiki/{home_page}/
-home_page = "Home"
+home_page = "index"
 
 # Enable incremental builds (only rebuild changed files)
 incremental = true
@@ -85,8 +85,12 @@ floating_toc = false
 # Each item needs: url, label
 # Optional: logo (image path), logo_alt (alt text)
 items = [
-    { url = "/about/", label = "About" },
-    { url = "/wiki/Home/", label = "Wiki" },
+    { url = "/", label = "Home" },
+    { url = "/wiki/", label = "Wiki" },
+    { url = "/publications/", label = "Publications" },
+    { url = "/research/", label = "Research" },
+    { url = "/talks/", label = "Talks" },
+    { url = "/cv/", label = "CV" },
 ]
 
 

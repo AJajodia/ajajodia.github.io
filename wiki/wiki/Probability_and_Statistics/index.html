@@ -11,7 +11,7 @@
 <meta content="article" property="og:type"/>
 <meta content="Probability and Statistics" property="og:title"/>
 <meta content="1. The Basics of Probability 2. Randomness and Paradigms 3. Random Variables 4. Discrete Distributions 5. Continuous Distributions 6. Information Theory 7...." property="og:description"/>
-<meta content="https://ajajodia.github.io//Probability_and_Statistics/" property="og:url"/>
+<meta content="https://ajajodia.github.io//wiki/wiki/Probability_and_Statistics/" property="og:url"/>
 <meta content="https://ajajodia.github.io//assets/image_1.png" property="og:image"/>
 <meta content="Anu Jajodia" property="og:site_name"/>
 <!-- Twitter Card -->
@@ -29,15 +29,39 @@
 </head>
 <body>
 <nav class="top-nav">
-<a href="/about/">
+<a href="/">
                 
-                    About
+                    Home
                 
             </a>
 <span class="nav-separator">·</span>
-<a href="/wiki/Home/">
+<a href="/wiki/">
                 
                     Wiki
+                
+            </a>
+<span class="nav-separator">·</span>
+<a href="/publications/">
+                
+                    Publications
+                
+            </a>
+<span class="nav-separator">·</span>
+<a href="/research/">
+                
+                    Research
+                
+            </a>
+<span class="nav-separator">·</span>
+<a href="/talks/">
+                
+                    Talks
+                
+            </a>
+<span class="nav-separator">·</span>
+<a href="/cv/">
+                
+                    CV
                 
             </a>
 </nav>
@@ -55,7 +79,7 @@
             var input = overlay.querySelector("[data-search-input]");
             var list = overlay.querySelector("[data-search-results]");
             var empty = overlay.querySelector("[data-search-empty]");
-            var indexUrl = "/search.json";
+            var indexUrl = "/wiki/search.json";
             var pages = null, loading = false, active = -1;
 
             function loadIndex() {
@@ -155,6 +179,8 @@
 <article>
 <header>
 <h1>Probability and Statistics</h1>
+<p class="page-dates">
+</p>
 </header>
 <section class="content">
 <h1 id="probability-and-statistics">Probability and Statistics<a class="header-anchor" href="#probability-and-statistics" title="Link to this section">#</a></h1>
@@ -372,7 +398,7 @@ Continuous random variables can be any real number (sometimes restricted to a ra
 Z_n = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0, 1)
 $$</p>
 <h2 id="estimators">Estimators<a class="header-anchor" href="#estimators" title="Link to this section">#</a></h2>
-<p>Estimators are functions of data. Estimators take in data and give us an estimate for a population parameter. While we most often use the <a class="wikilink" href="////#Maximum Likelihood Estimation">maximum likelihood estimator</a>, there are lots of other estimators.</p>
+<p>Estimators are functions of data. Estimators take in data and give us an estimate for a population parameter. While we most often use the <a class="wikilink" href="/wiki//#Maximum Likelihood Estimation">maximum likelihood estimator</a>, there are lots of other estimators.</p>
 <h2 id="maximum-likelihood-estimation">Maximum Likelihood Estimation<a class="header-anchor" href="#maximum-likelihood-estimation" title="Link to this section">#</a></h2>
 <p>The maximum likelihood estimate is the estimate of a population parameter that has the highest probability of producing the data that we observe. We find it by maximizing the likelihood function, which is effectively the joint probability of the PMF for the distribution we are sampling from.</p>
 <h2 id="bias">Bias<a class="header-anchor" href="#bias" title="Link to this section">#</a></h2>
@@ -381,9 +407,9 @@ $$</p>
 <p>Consistency means that an estimator gets more accurate as n increases. However, efficiency is how comparatively accurate an estimator is compared to another estimator of the same parameter.</p>
 <h2 id="advanced-topics">Advanced Topics<a class="header-anchor" href="#advanced-topics" title="Link to this section">#</a></h2>
 <ul>
-<li><a class="wikilink" href="////#Fisher Information">#Fisher Information</a></li>
-<li><a class="wikilink" href="////#Cramer-Rao Lower Bound">#Cramer-Rao Lower Bound</a></li>
-<li><a class="wikilink" href="////#Likelihood Ratio Testing">#Likelihood Ratio Testing</a></li>
+<li><a class="wikilink" href="/wiki//#Fisher Information">#Fisher Information</a></li>
+<li><a class="wikilink" href="/wiki//#Cramer-Rao Lower Bound">#Cramer-Rao Lower Bound</a></li>
+<li><a class="wikilink" href="/wiki//#Likelihood Ratio Testing">#Likelihood Ratio Testing</a></li>
 </ul>
 <h3 id="fisher-information">Fisher Information<a class="header-anchor" href="#fisher-information" title="Link to this section">#</a></h3>
 <h3 id="cramer-rao-lower-bound">Cramer-Rao Lower Bound<a class="header-anchor" href="#cramer-rao-lower-bound" title="Link to this section">#</a></h3>
@@ -422,7 +448,7 @@ $$Y_i | \mu \sim \mathcal{N}(\mu, \sigma^2)$$</p>
 <h3 id="grid-approximation">Grid Approximation<a class="header-anchor" href="#grid-approximation" title="Link to this section">#</a></h3>
 <h3 id="markov-chain-monte-carlo">Markov Chain Monte Carlo<a class="header-anchor" href="#markov-chain-monte-carlo" title="Link to this section">#</a></h3>
 <p>In Markov chain Monte Carlo (MCMC), we sample values from the posterior distribution by generating candidate points and only going to the ones that are most likely. There are a number of sampling algorithms.</p>
-<p>!<img class="wikilink-image" src="/Pasted-image-20260519104116.png"/></p>
+<p>!<img class="wikilink-image" src="/wiki/Pasted-image-20260519104116.png"/></p>
 <h4 id="metropolis-hastings-algorithm">Metropolis-Hastings Algorithm<a class="header-anchor" href="#metropolis-hastings-algorithm" title="Link to this section">#</a></h4>
 <p>1) Choose a candidate point via a proposal model with the following PDF:
 $$q(\mu', \mu)$$
@@ -466,7 +492,7 @@ $$\alpha = \min\Biggl\{1, \frac{f(\mu')L(\mu'|y)}{f(\mu)L(\mu|y)} \frac{q(\mu|\m
 </ul>
 <h1 id="machine-learning-deep-learning-computation">machine-learning #deep-learning #computation<a class="header-anchor" href="#machine-learning-deep-learning-computation" title="Link to this section">#</a></h1>
 <p>In Markov chain Monte Carlo (MCMC), we sample values from the posterior distribution by generating candidate points and only going to the ones that are most likely. There are a number of sampling algorithms.</p>
-<p>!<img class="wikilink-image" src="/Pasted-image-20260519104116.png"/></p>
+<p>!<img class="wikilink-image" src="/wiki/Pasted-image-20260519104116.png"/></p>
 <h2 id="metropolis-hastings-algorithm_1">Metropolis-Hastings Algorithm<a class="header-anchor" href="#metropolis-hastings-algorithm_1" title="Link to this section">#</a></h2>
 <p>1) Choose a candidate point via a proposal model with the following PDF:
 $$q(\mu', \mu)$$
