@@ -10,7 +10,7 @@
   {
     "title": "CV",
     "path": "cv/index",
-    "url": "/wiki/cv/index/",
+    "url": "/cv/index/",
     "content": "# Curriculum Vitae\n\n(Coming soon)",
     "published": "2026-08-26T18:20:07.939173+00:00",
     "tags": []
@@ -18,7 +18,7 @@
   {
     "title": "Publications",
     "path": "publications/index",
-    "url": "/wiki/publications/index/",
+    "url": "/publications/index/",
     "content": "# Publications\n\n(Coming soon)",
     "published": "2026-08-26T18:19:39.437069+00:00",
     "tags": []
@@ -26,7 +26,7 @@
   {
     "title": "Research",
     "path": "research/index",
-    "url": "/wiki/research/index/",
+    "url": "/research/index/",
     "content": "# Research\n\n(Coming soon)",
     "published": "2026-08-26T18:19:52.835615+00:00",
     "tags": []
@@ -34,7 +34,7 @@
   {
     "title": "Talks",
     "path": "talks/index",
-    "url": "/wiki/talks/index/",
+    "url": "/talks/index/",
     "content": "# Talks\n\n(Coming soon)",
     "published": "2026-08-26T18:20:02.581496+00:00",
     "tags": []
@@ -42,7 +42,7 @@
   {
     "title": "Probability and Statistics",
     "path": "wiki/Probability_and_Statistics",
-    "url": "/wiki/wiki/Probability_and_Statistics/",
+    "url": "/wiki/Probability_and_Statistics/",
     "content": "# Probability and Statistics\n\n## Table of Contents\n\n1. [The Basics of Probability](#the-basics-of-probability)\n2. [Randomness and Paradigms](#randomness-and-paradigms)\n3. [Random Variables](#random-variables)\n4. [Discrete Distributions](#discrete-distributions)\n5. [Continuous Distributions](#continuous-distributions)\n6. [Information Theory](#information-theory)\n7. [Frequentist Statistics](#frequentist-statistics)\n8. [Bayesian Statistics](#bayesian-statistics)\n9. [Data Visualization](#data-visual",
     "published": "2026-08-26T17:47:47.612913+00:00",
     "tags": []
@@ -50,7 +50,7 @@
   {
     "title": "Wiki",
     "path": "wiki/index",
-    "url": "/wiki/wiki/index/",
+    "url": "/wiki/index/",
     "content": "# Wiki\n\nA collection of notes and resources on various topics.\n\n- [Probability and Statistics](Probability_and_Statistics) - Comprehensive notes on probability theory and statistics",
     "published": "2026-08-26T18:19:07.717433+00:00",
     "tags": []

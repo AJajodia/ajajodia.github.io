@@ -1,7 +1,7 @@
 /index/
-/wiki/cv/index/
-/wiki/publications/index/
-/wiki/research/index/
-/wiki/talks/index/
-/wiki/wiki/Probability_and_Statistics/
-/wiki/wiki/index/
+/cv/index/
+/publications/index/
+/research/index/
+/talks/index/
+/wiki/Probability_and_Statistics/
+/wiki/index/

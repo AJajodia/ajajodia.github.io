@@ -37,7 +37,7 @@ homepage_dir = "_homepage"
 
 # URL prefix for wiki content (e.g., "wiki" -> /wiki/PageName/)
 # Set to empty string "" to deploy wiki content at root
-wiki_prefix = "wiki"
+wiki_prefix = ""
 
 # Wiki home page - used as the redirect target for /wiki/ and for recent pages list
 # Visiting /wiki/ will redirect to /wiki/{home_page}/
