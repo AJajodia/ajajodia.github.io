@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>My Site</title>
-  <subtitle>My Site - Recent updates</subtitle>
-  <link href="https://example.com/feed.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://example.com/" rel="alternate" type="text/html"/>
-  <id>https://example.com/</id>
+  <title>Anu Jajodia</title>
+  <subtitle>Anu Jajodia - Recent updates</subtitle>
+  <link href="https://ajajodia.github.io/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://ajajodia.github.io/" rel="alternate" type="text/html"/>
+  <id>https://ajajodia.github.io/</id>
   <updated>2026-08-26T18:51:03Z</updated>
   
   <generator uri="https://github.com/yyahn/foliate" version="0.11.2">foliate</generator>
@@ -12,8 +12,8 @@
   
   <entry>
     <title>Wiki</title>
-    <link href="https://example.com/wiki/home/" rel="alternate" type="text/html"/>
-    <id>https://example.com/wiki/home/</id>
+    <link href="https://ajajodia.github.io/wiki/home/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/wiki/home/</id>
     <published>2026-08-26T18:51:03Z</published>
     <updated>2026-08-26T18:51:03Z</updated>
     
@@ -28,8 +28,8 @@
   
   <entry>
     <title>Probability and Statistics</title>
-    <link href="https://example.com/wiki/Probability_and_Statistics/" rel="alternate" type="text/html"/>
-    <id>https://example.com/wiki/Probability_and_Statistics/</id>
+    <link href="https://ajajodia.github.io/wiki/Probability_and_Statistics/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/wiki/Probability_and_Statistics/</id>
     <published>2026-08-26T00:00:00Z</published>
     <updated>2026-08-26T18:49:25Z</updated>
     

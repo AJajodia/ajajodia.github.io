@@ -6,10 +6,10 @@
 
 [site]
 # Site name (appears in browser title, metadata)
-name = "My Site"
+name = "Anu Jajodia"
 
 # Full URL where the site will be deployed (used for sitemaps, social cards)
-url = "https://example.com"
+url = "https://ajajodia.github.io"
 
 # Author name (used in metadata)
 author = ""
@@ -99,9 +99,9 @@ author_link = "about/"
 
 [deploy]
 # Deployment settings for `foliate deploy`
-# method = "github-pages"  # Currently only github-pages is supported
-# target = "../my-site.github.io"  # Path to your GitHub Pages repository
-# exclude = ["CNAME", ".gitignore", ".gitmodules", ".claude"]  # Files to preserve in target
+method = "github-pages"  # Currently only github-pages is supported
+target = "../ajajodia.github.io"  # Path to your GitHub Pages repository
+exclude = ["CNAME", ".gitignore", ".gitmodules", ".claude"]  # Files to preserve in target
 
 
 [advanced]
