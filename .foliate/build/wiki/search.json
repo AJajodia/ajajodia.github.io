@@ -6,21 +6,5 @@
     "content": "# Probability and Statistics\n\n## Table of Contents\n\n1. [The Basics of Probability](#the-basics-of-probability)\n2. [Randomness and Paradigms](#randomness-and-paradigms)\n3. [Random Variables](#random-variables)\n4. [Discrete Distributions](#discrete-distributions)\n5. [Continuous Distributions](#continuous-distributions)\n6. [Information Theory](#information-theory)\n7. [Frequentist Statistics](#frequentist-statistics)\n8. [Bayesian Statistics](#bayesian-statistics)\n9. [Data Visualization](#data-visual",
     "published": "2026-08-26T00:00:00+00:00",
     "tags": []
-  },
-  {
-    "title": "Home",
-    "path": "about",
-    "url": "/about/",
-    "content": "# Welcome\n\nI'm a PhD student at the University of Virginia School of Data Science.\n\nIn 2025, I was a part of the [Engineers for Exploration REU](https://e4e.ucsd.edu/) at UCSD where I worked on techniques for exploring unlabeled bioacoustic audio data, taking advantage of deep vector embeddings and graph representations of relationships in data.\n\nBefore that, my work primarily consists of statistical consulting for social programs. I consulted for the Community Action Center in Northfield, aimin",
-    "published": "2026-08-26T17:47:41.603207+00:00",
-    "tags": []
-  },
-  {
-    "title": "Wiki",
-    "path": "home",
-    "url": "/wiki/home/",
-    "content": "# Welcome to my Wiki\n\nThis is my personal knowledge base, built with [Foliate](https://yyahn.com/wiki/Software/foliate/). It contains notes, references, and explorations across topics I'm learning about.\n\n## Recent Pages\n\n- [Probability and Statistics](Probability_and_Statistics) \u2014 Aug 26, 2026",
-    "published": "2026-08-26T18:51:03.019961+00:00",
-    "tags": []
   }
 ]

@@ -1,7 +1,8 @@
 {
   "cssTheme": "Border",
   "enabledCssSnippets": [
-    "bigger_math"
+    "bigger_math",
+    "image-align"
   ],
   "theme": "moonstone"
 }

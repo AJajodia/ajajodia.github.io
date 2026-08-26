@@ -1,10 +1,8 @@
 ---
 title: "Home"
 public: true
-published: true
+published: false
 ---
-
-# Welcome
 
 I'm a PhD student at the University of Virginia School of Data Science.
 
@@ -14,11 +12,11 @@ Before that, my work primarily consists of statistical consulting for social pro
 
 In my free time, I play the guitar and have discovered a passion for surfing (thanks San Diego!)
 
+[LinkedIn](linkedin.com/in/asjajodia) | [GitHub](github.com/AJajodia)
 ## News
 
+- **Aug 2026:** Started at UVA
 - **Mar 2026:** Paper accepted at Ecological Informatics
-- **Oct 2025:** Presented at eUSR 2025
 - **Oct 2025:** Paper presented at IEEE Oceans
 - **Sept 2025:** Started research at the Hoopfer Lab
-- **Aug 2025:** Presented to the San Diego Zoo
 - **June 2025:** Started research at E4E

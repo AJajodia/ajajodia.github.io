@@ -9,10 +9,10 @@
 
 :root {
   /* Primary Colors */
-  --color-primary: #232D4B;
-  --color-primary-dark: #133584;
-  --color-secondary: #7c3aed;
-  --color-accent: #f59e0b;
+  --color-primary: #006d77;
+  --color-primary-dark: #006d77;
+  --color-secondary: #83c5be;
+  --color-accent: #edf6f9;
 
   /* Typography */
   --font-family-sans: "Inter", "SF Pro Display", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;

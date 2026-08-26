@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5aa604b95185e76a",
+        "id": "392c59d46a98b8ec",
         "type": "tabs",
         "children": [
           {
-            "id": "326a46913d07f9d8",
+            "id": "2b5838fd6c5ac087",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/Belief Networks.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Belief Networks"
             }
           }
         ]
@@ -51,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#machine-learning",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,8 +76,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -179,11 +182,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "326a46913d07f9d8",
+  "active": "2b5838fd6c5ac087",
   "lastOpenFiles": [
-    "_homepage/about.md",
     "Probability_and_Statistics.md",
+    "notes/Embeddings.md",
+    "notes",
+    "notes/Belief Networks.md",
+    "_homepage/about.md",
+    "|300.md",
     "home.md",
+    "assets/headshot.jpeg",
+    "images",
+    "README.md",
     "wiki/Probability_and_Statistics.md",
     "wiki/home.md",
     "wiki/Probability_and_Statistics/index.html",
@@ -194,8 +204,6 @@
     "talks",
     "research/index.html",
     "research",
-    "publications/index.html",
-    "publications",
     "cv.md",
     "talks.md",
     "research.md",
@@ -215,11 +223,6 @@
     "08_Bayesian_Statistics.md",
     "images/Pasted image 20260519104116.png",
     "01_Probability_Basics.md",
-    "02_Randomness_and_Paradigms.md",
-    "05_Continuous_Distributions.md",
-    "04_Discrete_Distributions.md",
-    "03_Random_Variables.md",
-    "10_Hypothesis_Testing.md",
-    "07_Frequentist_Statistics.md"
+    "02_Randomness_and_Paradigms.md"
   ]
 }
