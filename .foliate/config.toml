@@ -6,13 +6,13 @@
 
 [site]
 # Site name (appears in browser title, metadata)
-name = "Anu Jajodia"
+name = "My Site"
 
 # Full URL where the site will be deployed (used for sitemaps, social cards)
-url = "https://ajajodia.github.io/"
+url = "https://example.com"
 
 # Author name (used in metadata)
-author = "Anu Jajodia"
+author = ""
 
 # Default image for social media previews (Open Graph, Social media cards)
 # Relative to assets/ directory
@@ -30,19 +30,18 @@ ignored_folders = ["_private"]
 
 # Where to redirect the site root (/)
 # This page should exist in _homepage/ with public: true
-# Leave empty to serve _homepage content directly at root
-home_redirect = ""
+home_redirect = "about"
 
 # Special directory for homepage content (deployed to site root instead of /wiki/)
 homepage_dir = "_homepage"
 
 # URL prefix for wiki content (e.g., "wiki" -> /wiki/PageName/)
 # Set to empty string "" to deploy wiki content at root
-wiki_prefix = ""
+wiki_prefix = "wiki"
 
 # Wiki home page - used as the redirect target for /wiki/ and for recent pages list
 # Visiting /wiki/ will redirect to /wiki/{home_page}/
-home_page = "home"
+home_page = "Home"
 
 # Enable incremental builds (only rebuild changed files)
 incremental = true
@@ -86,20 +85,16 @@ floating_toc = false
 # Each item needs: url, label
 # Optional: logo (image path), logo_alt (alt text)
 items = [
-    { url = "/", label = "Home" },
-    { url = "/wiki/home/", label = "Wiki" },
-    { url = "/publications/", label = "Publications" },
-    { url = "/research/", label = "Research" },
-    { url = "/talks/", label = "Talks" },
-    { url = "/cv/", label = "CV" },
+    { url = "/about/", label = "About" },
+    { url = "/wiki/Home/", label = "Wiki" },
 ]
 
 
 [footer]
 # Footer settings
 copyright_year = 2026
-author_name = "Anu Jajodia"
-author_link = "/"
+author_name = ""
+author_link = "about/"
 
 
 [deploy]

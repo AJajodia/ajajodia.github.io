@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "cc7415bbfdbfebc4",
+    "type": "split",
+    "children": [
+      {
+        "id": "5aa604b95185e76a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "326a46913d07f9d8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0bb15dec8cd2a88d",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c035c3961542dc7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24b93690e1ab8d60",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "52f290a4ff37a58a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#machine-learning",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "02c2c7abaeabe4fa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8a264df3644b2588",
+    "type": "split",
+    "children": [
+      {
+        "id": "78765ae2415507c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3e306d42efb7641",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "27ea9856a60f06ae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4fb6cb0599605169",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "48211a39bcf0d1b1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3887111b7d4e943e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "326a46913d07f9d8",
+  "lastOpenFiles": [
+    "_homepage/about.md",
+    "Probability_and_Statistics.md",
+    "home.md",
+    "wiki/Probability_and_Statistics.md",
+    "wiki/home.md",
+    "wiki/Probability_and_Statistics/index.html",
+    "wiki/Probability_and_Statistics",
+    "wiki/home/index.html",
+    "wiki/home",
+    "talks/index.html",
+    "talks",
+    "research/index.html",
+    "research",
+    "publications/index.html",
+    "publications",
+    "cv.md",
+    "talks.md",
+    "research.md",
+    "publications.md",
+    "talks/index.md",
+    "research/index.md",
+    "publications/index.md",
+    "cv/index.md",
+    "wiki/index.md",
+    "_homepage/index.md",
+    "Home.md",
+    "assets/image_3.png",
+    "assets/image_2.png",
+    "assets/image_1.png",
+    "12_Bayesian_Computation.md",
+    "11_Machine_Learning_Basics.md",
+    "08_Bayesian_Statistics.md",
+    "images/Pasted image 20260519104116.png",
+    "01_Probability_Basics.md",
+    "02_Randomness_and_Paradigms.md",
+    "05_Continuous_Distributions.md",
+    "04_Discrete_Distributions.md",
+    "03_Random_Variables.md",
+    "10_Hypothesis_Testing.md",
+    "07_Frequentist_Statistics.md"
+  ]
+}
