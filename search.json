@@ -44,15 +44,15 @@
     "path": "wiki/Probability_and_Statistics",
     "url": "/wiki/Probability_and_Statistics/",
     "content": "# Probability and Statistics\n\n## Table of Contents\n\n1. [The Basics of Probability](#the-basics-of-probability)\n2. [Randomness and Paradigms](#randomness-and-paradigms)\n3. [Random Variables](#random-variables)\n4. [Discrete Distributions](#discrete-distributions)\n5. [Continuous Distributions](#continuous-distributions)\n6. [Information Theory](#information-theory)\n7. [Frequentist Statistics](#frequentist-statistics)\n8. [Bayesian Statistics](#bayesian-statistics)\n9. [Data Visualization](#data-visual",
-    "published": "2026-08-26T18:34:54.845636+00:00",
+    "published": "2026-08-26T00:00:00+00:00",
     "tags": []
   },
   {
     "title": "Wiki",
     "path": "wiki/home",
     "url": "/wiki/home/",
-    "content": "# Welcome to my Wiki\n\nThis is my personal knowledge base, built with [Foliate](https://yyahn.com/wiki/Software/foliate/). It contains notes, references, and explorations across topics I'm learning about.\n\n## Topics\n\n- **[Probability and Statistics](Probability_and_Statistics)** \u2014 Comprehensive notes on probability theory, statistical methods, and computational statistics\n\n## Recent Updates\n\n- August 2026 \u2014 Set up Foliate wiki with combined probability and statistics notes",
-    "published": "2026-08-26T18:42:29.517686+00:00",
+    "content": "# Welcome to my Wiki\n\nThis is my personal knowledge base, built with [Foliate](https://yyahn.com/wiki/Software/foliate/). It contains notes, references, and explorations across topics I'm learning about.\n\n## Recent Pages\n\n- [Probability and Statistics](Probability_and_Statistics) \u2014 Aug 26, 2026",
+    "published": "2026-08-26T18:51:03.019961+00:00",
     "tags": []
   }
 ]

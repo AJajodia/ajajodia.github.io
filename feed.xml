@@ -5,7 +5,7 @@
   <link href="https://ajajodia.github.io//feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://ajajodia.github.io//" rel="alternate" type="text/html"/>
   <id>https://ajajodia.github.io//</id>
-  <updated>2026-08-26T18:42:29Z</updated>
+  <updated>2026-08-26T18:51:03Z</updated>
   
   <author>
     <name>Anu Jajodia</name>
@@ -18,18 +18,86 @@
     <title>Wiki</title>
     <link href="https://ajajodia.github.io/wiki/home/" rel="alternate" type="text/html"/>
     <id>https://ajajodia.github.io/wiki/home/</id>
-    <published>2026-08-26T18:42:29Z</published>
-    <updated>2026-08-26T18:42:29Z</updated>
+    <published>2026-08-26T18:51:03Z</published>
+    <updated>2026-08-26T18:51:03Z</updated>
     
     <content type="html"><![CDATA[<h1 id="welcome-to-my-wiki">Welcome to my Wiki<a class="header-anchor" href="#welcome-to-my-wiki" title="Link to this section">#</a></h1>
 <p>This is my personal knowledge base, built with <a href="https://yyahn.com/wiki/Software/foliate/">Foliate</a>. It contains notes, references, and explorations across topics I’m learning about.</p>
-<h2 id="topics">Topics<a class="header-anchor" href="#topics" title="Link to this section">#</a></h2>
+<h2 id="recent-pages">Recent Pages<a class="header-anchor" href="#recent-pages" title="Link to this section">#</a></h2>
 <ul>
-<li><strong><a href="Probability_and_Statistics">Probability and Statistics</a></strong> — Comprehensive notes on probability theory, statistical methods, and computational statistics</li>
-</ul>
-<h2 id="recent-updates">Recent Updates<a class="header-anchor" href="#recent-updates" title="Link to this section">#</a></h2>
+<li><a href="Probability_and_Statistics">Probability and Statistics</a> — Aug 26, 2026</li>
+</ul>]]></content>
+    
+  </entry>
+  
+  <entry>
+    <title>CV</title>
+    <link href="https://ajajodia.github.io/cv/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/cv/</id>
+    <published>2026-08-26T18:27:28Z</published>
+    <updated>2026-08-26T18:27:28Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="curriculum-vitae">Curriculum Vitae<a class="header-anchor" href="#curriculum-vitae" title="Link to this section">#</a></h1>
+<p>(Coming soon)</p>]]></content>
+    
+  </entry>
+  
+  <entry>
+    <title>Talks</title>
+    <link href="https://ajajodia.github.io/talks/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/talks/</id>
+    <published>2026-08-26T18:27:24Z</published>
+    <updated>2026-08-26T18:27:24Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="talks">Talks<a class="header-anchor" href="#talks" title="Link to this section">#</a></h1>
+<p>(Coming soon)</p>]]></content>
+    
+  </entry>
+  
+  <entry>
+    <title>Research</title>
+    <link href="https://ajajodia.github.io/research/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/research/</id>
+    <published>2026-08-26T18:27:20Z</published>
+    <updated>2026-08-26T18:27:20Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="research">Research<a class="header-anchor" href="#research" title="Link to this section">#</a></h1>
+<p>(Coming soon)</p>]]></content>
+    
+  </entry>
+  
+  <entry>
+    <title>Publications</title>
+    <link href="https://ajajodia.github.io/publications/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/publications/</id>
+    <published>2026-08-26T18:27:16Z</published>
+    <updated>2026-08-26T18:27:16Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="publications">Publications<a class="header-anchor" href="#publications" title="Link to this section">#</a></h1>
+<p>(Coming soon)</p>]]></content>
+    
+  </entry>
+  
+  <entry>
+    <title>Home</title>
+    <link href="https://ajajodia.github.io/index/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/index/</id>
+    <published>2026-08-26T17:47:41Z</published>
+    <updated>2026-08-26T17:47:41Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="welcome">Welcome<a class="header-anchor" href="#welcome" title="Link to this section">#</a></h1>
+<p>I’m a PhD student at the University of Virginia School of Data Science.</p>
+<p>In 2025, I was a part of the <a href="https://e4e.ucsd.edu/">Engineers for Exploration REU</a> at UCSD where I worked on techniques for exploring unlabeled bioacoustic audio data, taking advantage of deep vector embeddings and graph representations of relationships in data.</p>
+<p>Before that, my work primarily consists of statistical consulting for social programs. I consulted for the Community Action Center in Northfield, aiming to explain effects of administrative and governmental policy changes on participation. I also worked for Metis Ricerche as part of a project addressing inefficiencies and inequities in the Italian healthcare system.</p>
+<p>In my free time, I play the guitar and have discovered a passion for surfing (thanks San Diego!)</p>
+<h2 id="news">News<a class="header-anchor" href="#news" title="Link to this section">#</a></h2>
 <ul>
-<li>August 2026 — Set up Foliate wiki with combined probability and statistics notes</li>
+<li><strong>Mar 2026:</strong> Paper accepted at Ecological Informatics</li>
+<li><strong>Oct 2025:</strong> Presented at eUSR 2025</li>
+<li><strong>Oct 2025:</strong> Paper presented at IEEE Oceans</li>
+<li><strong>Sept 2025:</strong> Started research at the Hoopfer Lab</li>
+<li><strong>Aug 2025:</strong> Presented to the San Diego Zoo</li>
+<li><strong>June 2025:</strong> Started research at E4E</li>
 </ul>]]></content>
     
   </entry>
@@ -38,8 +106,8 @@
     <title>Probability and Statistics</title>
     <link href="https://ajajodia.github.io/wiki/Probability_and_Statistics/" rel="alternate" type="text/html"/>
     <id>https://ajajodia.github.io/wiki/Probability_and_Statistics/</id>
-    <published>2026-08-26T18:34:54Z</published>
-    <updated>2026-08-26T18:34:54Z</updated>
+    <published>2026-08-26T00:00:00Z</published>
+    <updated>2026-08-26T18:49:25Z</updated>
     
     <content type="html"><![CDATA[<h1 id="probability-and-statistics">Probability and Statistics<a class="header-anchor" href="#probability-and-statistics" title="Link to this section">#</a></h1>
 <h2 id="table-of-contents">Table of Contents<a class="header-anchor" href="#table-of-contents" title="Link to this section">#</a></h2>
@@ -361,78 +429,6 @@ $$\alpha = \min\Biggl\{1, \frac{f(\mu')L(\mu'|y)}{f(\mu)L(\mu|y)} \frac{q(\mu|\m
 <h2 id="gibbs-sampling">Gibbs Sampling<a class="header-anchor" href="#gibbs-sampling" title="Link to this section">#</a></h2>
 <h1 id="variational-inference-variational-bayes">Variational Inference (Variational Bayes)<a class="header-anchor" href="#variational-inference-variational-bayes" title="Link to this section">#</a></h1>
 <h2 id="evidence-lower-bound">Evidence Lower Bound<a class="header-anchor" href="#evidence-lower-bound" title="Link to this section">#</a></h2>]]></content>
-    
-  </entry>
-  
-  <entry>
-    <title>CV</title>
-    <link href="https://ajajodia.github.io/cv/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/cv/</id>
-    <published>2026-08-26T18:27:28Z</published>
-    <updated>2026-08-26T18:27:28Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="curriculum-vitae">Curriculum Vitae<a class="header-anchor" href="#curriculum-vitae" title="Link to this section">#</a></h1>
-<p>(Coming soon)</p>]]></content>
-    
-  </entry>
-  
-  <entry>
-    <title>Talks</title>
-    <link href="https://ajajodia.github.io/talks/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/talks/</id>
-    <published>2026-08-26T18:27:24Z</published>
-    <updated>2026-08-26T18:27:24Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="talks">Talks<a class="header-anchor" href="#talks" title="Link to this section">#</a></h1>
-<p>(Coming soon)</p>]]></content>
-    
-  </entry>
-  
-  <entry>
-    <title>Research</title>
-    <link href="https://ajajodia.github.io/research/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/research/</id>
-    <published>2026-08-26T18:27:20Z</published>
-    <updated>2026-08-26T18:27:20Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="research">Research<a class="header-anchor" href="#research" title="Link to this section">#</a></h1>
-<p>(Coming soon)</p>]]></content>
-    
-  </entry>
-  
-  <entry>
-    <title>Publications</title>
-    <link href="https://ajajodia.github.io/publications/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/publications/</id>
-    <published>2026-08-26T18:27:16Z</published>
-    <updated>2026-08-26T18:27:16Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="publications">Publications<a class="header-anchor" href="#publications" title="Link to this section">#</a></h1>
-<p>(Coming soon)</p>]]></content>
-    
-  </entry>
-  
-  <entry>
-    <title>Home</title>
-    <link href="https://ajajodia.github.io/index/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/index/</id>
-    <published>2026-08-26T17:47:41Z</published>
-    <updated>2026-08-26T17:47:41Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="welcome">Welcome<a class="header-anchor" href="#welcome" title="Link to this section">#</a></h1>
-<p>I’m a PhD student at the University of Virginia School of Data Science.</p>
-<p>In 2025, I was a part of the <a href="https://e4e.ucsd.edu/">Engineers for Exploration REU</a> at UCSD where I worked on techniques for exploring unlabeled bioacoustic audio data, taking advantage of deep vector embeddings and graph representations of relationships in data.</p>
-<p>Before that, my work primarily consists of statistical consulting for social programs. I consulted for the Community Action Center in Northfield, aiming to explain effects of administrative and governmental policy changes on participation. I also worked for Metis Ricerche as part of a project addressing inefficiencies and inequities in the Italian healthcare system.</p>
-<p>In my free time, I play the guitar and have discovered a passion for surfing (thanks San Diego!)</p>
-<h2 id="news">News<a class="header-anchor" href="#news" title="Link to this section">#</a></h2>
-<ul>
-<li><strong>Mar 2026:</strong> Paper accepted at Ecological Informatics</li>
-<li><strong>Oct 2025:</strong> Presented at eUSR 2025</li>
-<li><strong>Oct 2025:</strong> Paper presented at IEEE Oceans</li>
-<li><strong>Sept 2025:</strong> Started research at the Hoopfer Lab</li>
-<li><strong>Aug 2025:</strong> Presented to the San Diego Zoo</li>
-<li><strong>June 2025:</strong> Started research at E4E</li>
-</ul>]]></content>
     
   </entry>
   
