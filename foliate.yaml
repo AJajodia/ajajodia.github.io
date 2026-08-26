@@ -27,7 +27,6 @@ output: "dist"
 
 # Asset paths
 assets_dir: "assets"
-static_dir: "static"
 
 # Exclude from build
 exclude:
