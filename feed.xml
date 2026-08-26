@@ -5,7 +5,7 @@
   <link href="https://ajajodia.github.io//feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://ajajodia.github.io//" rel="alternate" type="text/html"/>
   <id>https://ajajodia.github.io//</id>
-  <updated>2026-08-26T18:34:54Z</updated>
+  <updated>2026-08-26T18:42:29Z</updated>
   
   <author>
     <name>Anu Jajodia</name>
@@ -13,6 +13,26 @@
   
   <generator uri="https://github.com/yyahn/foliate" version="0.11.2">foliate</generator>
 
+  
+  <entry>
+    <title>Wiki</title>
+    <link href="https://ajajodia.github.io/wiki/home/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/wiki/home/</id>
+    <published>2026-08-26T18:42:29Z</published>
+    <updated>2026-08-26T18:42:29Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="welcome-to-my-wiki">Welcome to my Wiki<a class="header-anchor" href="#welcome-to-my-wiki" title="Link to this section">#</a></h1>
+<p>This is my personal knowledge base, built with <a href="https://yyahn.com/wiki/Software/foliate/">Foliate</a>. It contains notes, references, and explorations across topics I’m learning about.</p>
+<h2 id="topics">Topics<a class="header-anchor" href="#topics" title="Link to this section">#</a></h2>
+<ul>
+<li><strong><a href="Probability_and_Statistics">Probability and Statistics</a></strong> — Comprehensive notes on probability theory, statistical methods, and computational statistics</li>
+</ul>
+<h2 id="recent-updates">Recent Updates<a class="header-anchor" href="#recent-updates" title="Link to this section">#</a></h2>
+<ul>
+<li>August 2026 — Set up Foliate wiki with combined probability and statistics notes</li>
+</ul>]]></content>
+    
+  </entry>
   
   <entry>
     <title>Probability and Statistics</title>
@@ -341,21 +361,6 @@ $$\alpha = \min\Biggl\{1, \frac{f(\mu')L(\mu'|y)}{f(\mu)L(\mu|y)} \frac{q(\mu|\m
 <h2 id="gibbs-sampling">Gibbs Sampling<a class="header-anchor" href="#gibbs-sampling" title="Link to this section">#</a></h2>
 <h1 id="variational-inference-variational-bayes">Variational Inference (Variational Bayes)<a class="header-anchor" href="#variational-inference-variational-bayes" title="Link to this section">#</a></h1>
 <h2 id="evidence-lower-bound">Evidence Lower Bound<a class="header-anchor" href="#evidence-lower-bound" title="Link to this section">#</a></h2>]]></content>
-    
-  </entry>
-  
-  <entry>
-    <title>Wiki</title>
-    <link href="https://ajajodia.github.io/wiki/home/" rel="alternate" type="text/html"/>
-    <id>https://ajajodia.github.io/wiki/home/</id>
-    <published>2026-08-26T18:32:45Z</published>
-    <updated>2026-08-26T18:32:45Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="wiki">Wiki<a class="header-anchor" href="#wiki" title="Link to this section">#</a></h1>
-<p>A collection of notes and resources on various topics.</p>
-<ul>
-<li><a href="Probability_and_Statistics">Probability and Statistics</a> - Comprehensive notes on probability theory and statistics</li>
-</ul>]]></content>
     
   </entry>
   

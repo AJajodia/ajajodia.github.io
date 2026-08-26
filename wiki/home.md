@@ -4,8 +4,14 @@ public: true
 published: true
 ---
 
-# Wiki
+# Welcome to my Wiki
 
-A collection of notes and resources on various topics.
+This is my personal knowledge base, built with [Foliate](https://yyahn.com/wiki/Software/foliate/). It contains notes, references, and explorations across topics I'm learning about.
 
-- [Probability and Statistics](Probability_and_Statistics) - Comprehensive notes on probability theory and statistics
+## Topics
+
+- **[Probability and Statistics](Probability_and_Statistics)** — Comprehensive notes on probability theory, statistical methods, and computational statistics
+
+## Recent Updates
+
+- August 2026 — Set up Foliate wiki with combined probability and statistics notes

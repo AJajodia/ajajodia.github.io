@@ -51,8 +51,8 @@
     "title": "Wiki",
     "path": "wiki/home",
     "url": "/wiki/home/",
-    "content": "# Wiki\n\nA collection of notes and resources on various topics.\n\n- [Probability and Statistics](Probability_and_Statistics) - Comprehensive notes on probability theory and statistics",
-    "published": "2026-08-26T18:32:45.860962+00:00",
+    "content": "# Welcome to my Wiki\n\nThis is my personal knowledge base, built with [Foliate](https://yyahn.com/wiki/Software/foliate/). It contains notes, references, and explorations across topics I'm learning about.\n\n## Topics\n\n- **[Probability and Statistics](Probability_and_Statistics)** \u2014 Comprehensive notes on probability theory, statistical methods, and computational statistics\n\n## Recent Updates\n\n- August 2026 \u2014 Set up Foliate wiki with combined probability and statistics notes",
+    "published": "2026-08-26T18:42:29.517686+00:00",
     "tags": []
   }
 ]
