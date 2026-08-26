@@ -1,0 +1,51 @@
+title: "Anu's Wiki"
+description: "A personal wiki on probability and statistics"
+author: "Anu"
+url: "https://your-domain.com"  # Update this to your actual domain
+
+# Theme and styling
+theme: "default"
+language: "en"
+
+# Navigation
+nav:
+  - title: "Home"
+    path: "/"
+  - title: "Probability and Statistics"
+    path: "/Probability_and_Statistics"
+
+# Content settings
+markdown:
+  extensions:
+    - tables
+    - fenced-code
+    - footnotes
+    - math  # For LaTeX support if needed
+
+# Build output directory
+output: "dist"
+
+# Asset paths
+assets_dir: "assets"
+static_dir: "static"
+
+# Exclude from build
+exclude:
+  - ".obsidian"
+  - ".DS_Store"
+  - "foliate.yaml"
+  - "README.md"
+  - "node_modules"
+  - "00_Index.md"
+  - "01_Probability_Basics.md"
+  - "02_Randomness_and_Paradigms.md"
+  - "03_Random_Variables.md"
+  - "04_Discrete_Distributions.md"
+  - "05_Continuous_Distributions.md"
+  - "06_Information_Theory.md"
+  - "07_Frequentist_Statistics.md"
+  - "08_Bayesian_Statistics.md"
+  - "09_Data_Visualization.md"
+  - "10_Hypothesis_Testing.md"
+  - "11_Machine_Learning_Basics.md"
+  - "12_Bayesian_Computation.md"
