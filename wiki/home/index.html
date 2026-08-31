@@ -3,38 +3,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{{ site_name }}{% endblock %}</title>
+    <title>Anu Wiki - Anu Jajodia</title>
 
     <!-- Description for search engines -->
-    {% if page and page.description %}
-    <meta name="description" content="{{ page.description|e }}">
-    {% endif %}
+    
+    <meta name="description" content="This is my personal knowledge base, built with Foliate. It contains notes, references, and explorations across topics I&#39;m learning about.">
+    
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ (page.title if page else site_name)|e }}">
-    {% if page and page.description %}
-    <meta property="og:description" content="{{ page.description|e }}">
-    {% endif %}
-    <meta property="og:url" content="{{ site_url }}{{ page.url if page else '/' }}">
-    {% if page and page.image %}
-    <meta property="og:image" content="{% if page.image.startswith('http') %}{{ page.image }}{% else %}{{ site_url }}{{ page.image }}{% endif %}">
-    {% elif default_og_image %}
-    <meta property="og:image" content="{{ site_url }}{{ default_og_image }}">
-    {% endif %}
-    <meta property="og:site_name" content="{{ site_name|e }}">
+    <meta property="og:title" content="Anu Wiki">
+    
+    <meta property="og:description" content="This is my personal knowledge base, built with Foliate. It contains notes, references, and explorations across topics I&#39;m learning about.">
+    
+    <meta property="og:url" content="https://ajajodia.github.io/wiki/home/">
+    
+    <meta property="og:image" content="https://ajajodia.github.io/assets/images/default-preview.png">
+    
+    <meta property="og:site_name" content="Anu Jajodia">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ (page.title if page else site_name)|e }}">
-    {% if page and page.description %}
-    <meta name="twitter:description" content="{{ page.description|e }}">
-    {% endif %}
-    {% if page and page.image %}
-    <meta name="twitter:image" content="{% if page.image.startswith('http') %}{{ page.image }}{% else %}{{ site_url }}{{ page.image }}{% endif %}">
-    {% elif default_og_image %}
-    <meta name="twitter:image" content="{{ site_url }}{{ default_og_image }}">
-    {% endif %}
+    <meta name="twitter:title" content="Anu Wiki">
+    
+    <meta name="twitter:description" content="This is my personal knowledge base, built with Foliate. It contains notes, references, and explorations across topics I&#39;m learning about.">
+    
+    
+    <meta name="twitter:image" content="https://ajajodia.github.io/assets/images/default-preview.png">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,25 +39,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
 
     <!-- Atom Feed autodiscovery -->
-    {% if feed_enabled %}
-    <link rel="alternate" type="application/atom+xml" title="{{ feed_title or site_name }}" href="{{ site_url }}/feed.xml">
-    {% endif %}
+    
+    <link rel="alternate" type="application/atom+xml" title="Anu Jajodia" href="https://ajajodia.github.io/feed.xml">
+    
 </head>
 <body>
     <nav class="top-nav">
-        {% for nav_item in header_nav %}
-            {% if not loop.first %}<span class="nav-separator">·</span>{% endif %}
-            <a href="{{ nav_item.url }}">
-                {% if nav_item.logo %}
-                    <img src="{{ nav_item.logo }}" alt="{{ nav_item.logo_alt | default(nav_item.label) }}" class="nav-logo">{{ nav_item.label }}
-                {% else %}
-                    {{ nav_item.label }}
-                {% endif %}
+        
+            
+            <a href="/about/">
+                
+                    About
+                
             </a>
-        {% endfor %}
+        
+            <span class="nav-separator">·</span>
+            <a href="/wiki/Home/">
+                
+                    Wiki
+                
+            </a>
+        
     </nav>
 
-    {% if search_index_url %}
+    
     <div class="search-overlay" data-search-overlay hidden>
         <div class="search-modal" role="dialog" aria-modal="true" aria-label="Search">
             <input type="search" class="search-input" placeholder="Search pages…" autocomplete="off"
@@ -77,7 +78,7 @@
             var input = overlay.querySelector("[data-search-input]");
             var list = overlay.querySelector("[data-search-results]");
             var empty = overlay.querySelector("[data-search-empty]");
-            var indexUrl = {{ search_index_url|tojson }};
+            var indexUrl = "/wiki/search.json";
             var pages = null, loading = false, active = -1;
 
             function loadIndex() {
@@ -174,21 +175,51 @@
             });
         })();
     </script>
-    {% endif %}
+    
 
     <article>
-        {% block content %}{% endblock %}
+        
+<header>
+    <h1>Anu Wiki</h1>
+    
+    <p class="page-dates">
+        
+        
+    </p>
+    
+</header>
+
+
+
+<section class="content">
+    <p>This is my personal knowledge base, built with <a href="https://yyahn.com/wiki/Software/foliate/">Foliate</a>. It contains notes, references, and explorations across topics I&rsquo;m learning about.</p>
+</section>
+
+
+
+<section class="recent-pages">
+    <h2>Recent Pages</h2>
+    <ul class="page-list">
+        
+        <li>
+            <span class="page-date page-date--new">2026-08-26</span>
+            <a href="/wiki/Probability_and_Statistics/">Probability and Statistics</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
     </article>
 
     <div class="footer-separator"></div>
 
     <footer>
         <p class="footer-text">
-            {% if footer.author_name %}
-            &copy; {{ footer.copyright_year }} <a href="/{{ footer.author_link }}">{{ footer.author_name }}</a>
-            {% else %}
-            &copy; {{ footer.copyright_year }}
-            {% endif %}
+            
+            &copy; 2026
+            
         </p>
     </footer>
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Belief Networks.md",
+                "file": "notes/Modeling Beliefs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Belief Networks"
+              "title": "Modeling Beliefs"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "8a264df3644b2588",
@@ -182,28 +182,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "2b5838fd6c5ac087",
+  "active": "24b93690e1ab8d60",
   "lastOpenFiles": [
+    "wiki/home/index.html",
+    "wiki/Probability_and_Statistics/index.html",
+    "wiki/search.json",
+    "wiki/index.html",
+    "wiki/home",
+    "wiki/Probability_and_Statistics",
+    "wiki",
+    "static/main.css",
+    "static",
+    "sitemap.txt",
+    "index.html",
     "Probability_and_Statistics.md",
     "notes/Embeddings.md",
-    "notes",
-    "notes/Belief Networks.md",
+    "notes/Modeling Beliefs.md",
     "_homepage/about.md",
     "|300.md",
     "home.md",
     "assets/headshot.jpeg",
-    "images",
     "README.md",
     "wiki/Probability_and_Statistics.md",
     "wiki/home.md",
-    "wiki/Probability_and_Statistics/index.html",
-    "wiki/Probability_and_Statistics",
-    "wiki/home/index.html",
-    "wiki/home",
-    "talks/index.html",
-    "talks",
-    "research/index.html",
-    "research",
     "cv.md",
     "talks.md",
     "research.md",

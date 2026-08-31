@@ -1,3 +1,2 @@
-/wiki/Probability_and_Statistics/
 /about/
 /wiki/home/
