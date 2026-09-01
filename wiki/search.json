@@ -4,7 +4,7 @@
     "path": "paper_notes/1_cross_validation",
     "url": "/wiki/paper_notes/1_cross_validation/",
     "content": "# Summarizing and Replicating: \u2018Cross-Validation: What Does It Estimate and How Well Does It Do It?\u2019\u2019\n\n\nCross validation is thought of as estimating the prediction error of a\nmodel on the data. In other words, how well is the model fit to the\ndata. Bates, Hastie, and Tibshirani show that for linear models, cross\nvalidation instead estimates the average prediction error of models in\ngeneral fit on unseen data from the same population. This problem exists\nfor data splitting, bootstrapping, and Mal",
-    "published": "2026-09-01T05:08:40.716043+00:00",
+    "published": "2026-09-01T05:15:14.380528+00:00",
     "tags": []
   }
 ]

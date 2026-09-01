@@ -5,7 +5,7 @@
   <link href="https://ajajodia.github.io/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://ajajodia.github.io/" rel="alternate" type="text/html"/>
   <id>https://ajajodia.github.io/</id>
-  <updated>2026-09-01T05:08:40Z</updated>
+  <updated>2026-09-01T05:15:14Z</updated>
   
   <generator uri="https://github.com/yyahn/foliate" version="0.11.2">foliate</generator>
 
@@ -14,8 +14,8 @@
     <title>Cross-Validation: What Does It Estimate and How Well Does It Do It?</title>
     <link href="https://ajajodia.github.io/wiki/paper_notes/1_cross_validation/" rel="alternate" type="text/html"/>
     <id>https://ajajodia.github.io/wiki/paper_notes/1_cross_validation/</id>
-    <published>2026-09-01T05:08:40Z</published>
-    <updated>2026-09-01T05:08:40Z</updated>
+    <published>2026-09-01T05:15:14Z</published>
+    <updated>2026-09-01T05:15:14Z</updated>
     
     <content type="html"><![CDATA[<h1 id="summarizing-and-replicating-cross-validation-what-does-it-estimate-and-how-well-does-it-do-it">Summarizing and Replicating: ‘Cross-Validation: What Does It Estimate and How Well Does It Do It?’’<a class="header-anchor" href="#summarizing-and-replicating-cross-validation-what-does-it-estimate-and-how-well-does-it-do-it" title="Link to this section">#</a></h1>
 <p>Cross validation is thought of as estimating the prediction error of a
@@ -117,7 +117,7 @@ closely estimates $\text{Err}$ than $\text{Err}_{XY}$. They demonstrate
 that with the following <em>proportional asymptotic limit</em>: $n &gt; p$,
 $n, p \rightarrow \infty$, $n/p \rightarrow \lambda &gt; 1$, the above
 statement is true.</p>
-<p><img src="images/err_xy.png" data-fig-align="center" width="500"
+<p><img src="/assets/err_xy.png" data-fig-align="center" width="500"
 alt="From simulation, as n increases, the estimated error from CV is farther from Err than both ErrXY and ErrX" /></p>
 <h3 id="the-bias-of-cross-validation">The Bias of Cross-Validation<a class="header-anchor" href="#the-bias-of-cross-validation" title="Link to this section">#</a></h3>
 <p>This section talks about the bias of the CV prediction error estimate
@@ -144,8 +144,7 @@ $e_1, \ldots, e_n$ are not independent. They propose Nested CV</p>
 \text{MSE} := \mathbb{E} \left[ \left( \widehat{\text{Err}} - \text{Err}_\text{XY} \right)^2\right]
 $$ Note the usage of $\text{Err}_{\text{XY}}$.</p>
 <h3 id="the-estimator">The Estimator<a class="header-anchor" href="#the-estimator" title="Link to this section">#</a></h3>
-<p><img alt="In nested CV, we hold out a part of the data and do k-1 fold CV on the
-non-held-out set" src="images/nested_diagram.png" /></p>
+<p><img alt="In nested CV, we hold out a part of the data and do k-1 fold CV on the non-held-out set" src="/assets/nested_diagram.png" /></p>
 <p>I’m not going to go into all of the proofs that get us to this point,
 but the bottom line is that the authors use the following estimation
 strategy, which, to me, surprisingly works. The key formula is</p>
@@ -296,7 +295,7 @@ modular. We need to define those functions first.</p>
 <span class="nf">stopImplicitCluster</span><span class="p">()</span>
 </code></pre></div>
 
-<p><img alt="" src="1_cross_validation_files/figure-commonmark/unnamed-chunk-8-1.png" /></p>]]></content>
+<p><img alt="" src="/assets/err_sim.png" /></p>]]></content>
     
   </entry>
   
