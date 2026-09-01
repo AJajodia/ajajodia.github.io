@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Anu Jajodia</title>
+  <subtitle>Anu Jajodia - Recent updates</subtitle>
+  <link href="https://ajajodia.github.io/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://ajajodia.github.io/" rel="alternate" type="text/html"/>
+  <id>https://ajajodia.github.io/</id>
+  <updated>2026-09-01T05:08:40Z</updated>
+  
+  <generator uri="https://github.com/yyahn/foliate" version="0.11.2">foliate</generator>
+
+  
+  <entry>
+    <title>Cross-Validation: What Does It Estimate and How Well Does It Do It?</title>
+    <link href="https://ajajodia.github.io/wiki/paper_notes/1_cross_validation/" rel="alternate" type="text/html"/>
+    <id>https://ajajodia.github.io/wiki/paper_notes/1_cross_validation/</id>
+    <published>2026-09-01T05:08:40Z</published>
+    <updated>2026-09-01T05:08:40Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="summarizing-and-replicating-cross-validation-what-does-it-estimate-and-how-well-does-it-do-it">Summarizing and Replicating: ‘Cross-Validation: What Does It Estimate and How Well Does It Do It?’’<a class="header-anchor" href="#summarizing-and-replicating-cross-validation-what-does-it-estimate-and-how-well-does-it-do-it" title="Link to this section">#</a></h1>
+<p>Cross validation is thought of as estimating the prediction error of a
+model on the data. In other words, how well is the model fit to the
+data. Bates, Hastie, and Tibshirani show that for linear models, cross
+validation instead estimates the average prediction error of models in
+general fit on unseen data from the same population. This problem exists
+for data splitting, bootstrapping, and Mallow’s $C_p$. Furthermore,
+prediction error may not be accurately represented by confidence
+intervals and correlation exists between accuracies for each fold of
+cross validation. The authors introduce nested cross validation to solve
+this problem.</p>
+<h2 id="introduction">Introduction<a class="header-anchor" href="#introduction" title="Link to this section">#</a></h2>
+<p>CV is when statisticians leave parts of the data unseen during model
+fit. The authors explain that CV is flawed because it underestimates
+variance. Points reused in several fits will cause the results to be
+correlated.</p>
+<h3 id="a-simple-example">A Simple Example<a class="header-anchor" href="#a-simple-example" title="Link to this section">#</a></h3>
+<p>$$P(Y_i = 1 | X_i = x_i) = \frac{1}{1 + \exp(-x_i^T \theta)}$$</p>
+<p>is a logistic regression with $n = 90$ and $p = 1000$ where each $p_i$
+is i.i.d. normal. The authors show that the confidence intervals for
+these predictions are far too small.</p>
+<p>Note: the authors put this information in Bates’ NestedCV Github
+<a href="https://github.com/stephenbates19/nestedcv_experiments">https://github.com/stephenbates19/nestedcv_experiments</a></p>
+<h3 id="related-work">Related Work<a class="header-anchor" href="#related-work" title="Link to this section">#</a></h3>
+<p>Cross validation is ubiquitous. It’s much better than train-test splits.
+Other ways to estimate prediction error are Mallow’s $C_p$, AIC, and
+BIC. What does CV actually do? Harder to say. Prediction accuracy as
+estimated by CV should, the authors suggest, “be treated as an estimator
+of the average prediction error across training sets”. This language is
+a little unclear, so I will assume that they mean that CV estimates the
+expected prediction error on a theoretical out-of-sample value after
+training on an arbitrary training set. They then explain that CV should
+also give us confidence intervals for the prediction error. Something I
+didn’t know already is that there cannot be an unbiased estimator for
+the variance of k-fold CV, for which they cite a fundamental result by
+<a href="https://www.jmlr.org/papers/volume5/grandvalet04a/grandvalet04a.pdf">Bengio and Grandvalet
+(2004)</a>.
+That means that if the distribution is unknown, k-fold CV is an
+unreliable way to estimate prediction error variance, which might be
+really important, even though we can maybe find the prediction error.
+The authors continue to review many common approaches to CV, with the
+final note that it is statistically easier to compare two models with CV
+than to estimate PE.</p>
+<h3 id="authors-contribution">Authors’ Contribution<a class="header-anchor" href="#authors-contribution" title="Link to this section">#</a></h3>
+<ol>
+<li>Study various estimands for CV cases</li>
+<li>Prove that CV estimates the average error over multiple training
+    sets, rather than the error of the fit from the particular training
+    set</li>
+<li>Extend this result to data splitting, Mallow’s $C_p$ and bootstrap.</li>
+<li>Introduce Nested CV which has an unbiased estimate for the MSE of
+    the CV point estimate and accurate confidence intervals for PE</li>
+<li>Validate the results experimentally</li>
+</ol>
+<h2 id="setting-and-notation">Setting and Notation<a class="header-anchor" href="#setting-and-notation" title="Link to this section">#</a></h2>
+<p>The authors introduce $X$ and $Y$ for inputs and outputs of modeling,
+with $(X_i, Y_i)$ i.i.d. from a distribution $P$. We determine fit with
+a loss function
+$\ell(\hat y , y),: \mathcal{Y} \times \mathcal{Y} \rightarrow \mathbb{R}_{\geq 0}$.
+Then we have the out-of-sample error:</p>
+<p>$$
+\text{Err}_{XY} := \mathbb{E}\left[\ell(\hat f(X_{n+1}, \hat \theta), Y_{n+1}) | (X, Y)\right]
+$$</p>
+<p>$\text{Err}:= \mathbb{E}[\text{Err}_{XY}]$ naturally follows as the
+out-of-sample error across possible training data. We define k-fold CV
+as dividing data into $k$ groups and leaving each group out of the model
+fit, then computing the error on that data with our loss function. The
+authors mention making naive CIs with</p>
+<p>$$
+\hat{SE} := \frac{1}{\sqrt{n}} \cdot \sqrt{\frac{1}{(n-1} \sum(e_i - \bar e)^2}
+$$</p>
+<p>$(\bar e - z_{1-\alpha/2} \cdot \hat{SE}, \bar e + z_{1-\alpha/2} \cdot \hat{SE})$
+is then the confidence interval, basically treating the error as normal.</p>
+<h2 id="what-prediction-error-are-we-estimating">What Prediction Error are We Estimating?<a class="header-anchor" href="#what-prediction-error-are-we-estimating" title="Link to this section">#</a></h2>
+<h3 id="err-different-from-errxy">Err: Different from ErrXY<a class="header-anchor" href="#err-different-from-errxy" title="Link to this section">#</a></h3>
+<p>Uninituitively, $\text{Err}_{XY}$ is harder to estimate than
+$\text{Err}$ even though it’s the training data we actually have. If we
+have a linear model</p>
+<p>$$
+y_i = x_i^\top \theta + \epsilon_i, \quad \epsilon_i \sim \mathcal{N}(0, \sigma^2)
+$$</p>
+<p>Also important is $\text{Err}_X := \mathbb{E}[\text{Err}_{XY} | X]$
+which is the expectation of the PE on the training error for a specific
+$X$. The paper continues to give several definitions, but the cliff’s
+notes are that OLS is linearly invariant, giving us the result Theorem
+1:</p>
+<p>$$
+    \hat{\text{Err}} \perp \text{Err}_{XY} | X
+$$</p>
+<p>This is to say that if we have a linearly invariant estimator for the
+prediction error, it is independent of the true prediction error for a
+specific $X$. That’s bad! The predicted error from cross validation
+doesn’t tell us anything about the model’s performance on the actual
+data we trained it on.</p>
+<h3 id="relationship-with-average-error">Relationship with Average Error<a class="header-anchor" href="#relationship-with-average-error" title="Link to this section">#</a></h3>
+<p>The authors then use this fact to prove that cross validation more
+closely estimates $\text{Err}$ than $\text{Err}_{XY}$. They demonstrate
+that with the following <em>proportional asymptotic limit</em>: $n &gt; p$,
+$n, p \rightarrow \infty$, $n/p \rightarrow \lambda &gt; 1$, the above
+statement is true.</p>
+<p><img src="images/err_xy.png" data-fig-align="center" width="500"
+alt="From simulation, as n increases, the estimated error from CV is farther from Err than both ErrXY and ErrX" /></p>
+<h3 id="the-bias-of-cross-validation">The Bias of Cross-Validation<a class="header-anchor" href="#the-bias-of-cross-validation" title="Link to this section">#</a></h3>
+<p>This section talks about the bias of the CV prediction error estimate
+under different regimes. Reminder, bias of an estimator is given by
+$\mathbb{E}[\widehat{\text{Err}} - \text{Err}]$.</p>
+<ol>
+<li><em>Parametric:</em> $p$ is fixed, $n$ grows, and bias decreases inversely
+    proportional to $n$.</li>
+<li><em>Proportional, dense:</em> bias converges to a nonzero constant</li>
+<li><em>Proportional, sparse:</em> significant bias</li>
+</ol>
+<h3 id="data-splitting-covariance-penalties-bootstrapping">Data Splitting, Covariance Penalties, Bootstrapping<a class="header-anchor" href="#data-splitting-covariance-penalties-bootstrapping" title="Link to this section">#</a></h3>
+<p>Data splitting is the common ML technique of train-test. The authors
+explain that even data splitting results in too small confidence
+intervals.</p>
+<p>The authors prove the same relationship shown with PE with Mallow’s
+$C_p$ and bootstrap PE</p>
+<h2 id="confidence-intervals-with-nested-cv">Confidence Intervals with Nested CV<a class="header-anchor" href="#confidence-intervals-with-nested-cv" title="Link to this section">#</a></h2>
+<p>The authors reaffirm that the issue with CV is that the errors
+$e_1, \ldots, e_n$ are not independent. They propose Nested CV</p>
+<h3 id="the-target">The Target<a class="header-anchor" href="#the-target" title="Link to this section">#</a></h3>
+<p>We want to estimate the MSE:</p>
+<p>$$
+\text{MSE} := \mathbb{E} \left[ \left( \widehat{\text{Err}} - \text{Err}_\text{XY} \right)^2\right]
+$$ Note the usage of $\text{Err}_{\text{XY}}$.</p>
+<h3 id="the-estimator">The Estimator<a class="header-anchor" href="#the-estimator" title="Link to this section">#</a></h3>
+<p><img alt="In nested CV, we hold out a part of the data and do k-1 fold CV on the
+non-held-out set" src="images/nested_diagram.png" /></p>
+<p>I’m not going to go into all of the proofs that get us to this point,
+but the bottom line is that the authors use the following estimation
+strategy, which, to me, surprisingly works. The key formula is</p>
+<p>$$
+\underbrace{\mathbb{E}\left[\left(\widehat{\mathrm{Err}}_{\widetilde{X}\widetilde{Y}} - \mathrm{Err}_{\widetilde{X}\widetilde{Y}}\right)^2\right]}_{\text{MSE}} = \underbrace{\mathbb{E}\left[\left(\widehat{\mathrm{Err}}_{\widetilde{X}\widetilde{Y}} - \bar{e}^{(\text{out})}\right)^2\right]}_{(a)}-\underbrace{\mathbb{E}\left[\left(\bar{e}^{(\text{out})} - \mathrm{Err}_{\widetilde{X}\widetilde{Y}}\right)^2\right]}_{(b)}.
+$$</p>
+<p>This is the expected error for the estimator of PE that we want to use
+trained on the data itself, rather than the average across datasets.</p>
+<ol>
+<li>
+<p>Repeatedly hold out a section $\mathcal{I}_{\text{(out)}}$ and use
+    CV on the other $K-1$ sections. This gives us
+    $\widehat{\text{Err}}_{\tilde X \tilde Y}$, which is an estimate of
+    the $\text{Err}_{X Y}$ fit on our subset of data
+    $\tilde X \tilde Y$. We also apply the model to the holdout to
+    obtain $\bar e^\text{(out)}$ Then, we can use this for (a) in the
+    formula. For (b), we use the same error term and estimate the value
+    with $\{e_i\}_{i \in \mathcal{I}_\text{(out)}}$ divided by the
+    cardinality of $\mathcal{I}_\text{(out)}$</p>
+</li>
+<li>
+<p>Average those estimates across several random splits, giving us our
+    estimate.</p>
+</li>
+</ol>
+<p>Question at this point! What is the variance of this value? It seems
+that if the variance of this estimator is high, then it has a chain
+reaction making it an inaccurate estimator in most settings (though
+unbiased).</p>
+<p>Nevertheless, the above strategy gives us
+$\widehat{\text{MSE}^{(\text{NCV})}}$, an estimator for the mean squared
+error of the actual model. Also, we still get a point estimate from
+averaging all of the errors. The following formula formally illustrates
+why we have this estimator:</p>
+<p>$$
+\mathbb{E}[\widehat{\text{MSE}}^{(\text{NCV})}] = \text{MSE}_{K-1, n'}
+$$ where $n'$ is $n(K-1)/K$, the actual $n$ that we would say this
+applies to. The authors note that if you care about $n$, you can rescale
+the estimate by $(K-1)/K$, but that it isn’t unbiased any more.</p>
+<h2 id="simulation-finally">Simulation (finally)<a class="header-anchor" href="#simulation-finally" title="Link to this section">#</a></h2>
+<p>The authors use 10-fold CV and 200 random NCV splits. They also do a
+data splitting experiment with a 4 to 1 split.</p>
+<h3 id="low-dimensional-logistic-regression">Low-Dimensional Logistic Regression<a class="header-anchor" href="#low-dimensional-logistic-regression" title="Link to this section">#</a></h3>
+<p>First, let’s load the author’s custom NestedCV package, which just
+implements the algorithm from the supplemental information. Note: some
+code is borrowed from
+<a href="https://github.com/stephenbates19/nestedcv_experiments">https://github.com/stephenbates19/nestedcv_experiments</a>, in order to
+take advantage of the multiprocessing Bates wrote for it.</p>
+<div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">nestedcv</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">foreach</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">doParallel</span><span class="p">)</span>
+<span class="nf">source</span><span class="p">(</span><span class="s">"data_wrapper.R"</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Then, let’s setup the simulation variables. We use $n = 100$
+observations and $p = 10$ features.</p>
+<div class="highlight"><pre><span></span><code><span class="n">n</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">100</span>
+<span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10</span>
+
+<span class="n">beta</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">))</span>
+<span class="n">strength</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span>
+
+<span class="c1"># beta values </span>
+<span class="n">beta</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">beta</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">strength</span>
+</code></pre></div>
+
+<p>Now, let’s simulate training data based on the data-generating model
+with normal features and logistic outcomes.</p>
+<div class="highlight"><pre><span></span><code><span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
+
+<span class="c1"># create an n x p feature matrix</span>
+<span class="n">X</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">matrix</span><span class="p">(</span><span class="nf">rnorm</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+
+<span class="c1"># calculate probabilities based on beta values</span>
+<span class="n">probs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="o">-</span><span class="n">X</span><span class="w"> </span><span class="o">%*%</span><span class="w"> </span><span class="n">beta</span><span class="p">))</span>
+
+<span class="c1"># randomly decide what value each value is with probability according to the predicted</span>
+<span class="n">Y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="p">(</span><span class="nf">runif</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">probs</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">1.0</span>
+</code></pre></div>
+
+<p>Now, let’s generate a holdout set in the same way.</p>
+<div class="highlight"><pre><span></span><code><span class="nf">set.seed</span><span class="p">(</span><span class="m">5</span><span class="p">)</span>
+<span class="n">n_holdout</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">20000</span>
+<span class="n">X_holdout</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">matrix</span><span class="p">(</span><span class="nf">rnorm</span><span class="p">(</span><span class="n">n_holdout</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n_holdout</span><span class="p">)</span>
+<span class="n">probs_holdout</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="o">-</span><span class="n">X_holdout</span><span class="w"> </span><span class="o">%*%</span><span class="w"> </span><span class="n">beta</span><span class="p">))</span>
+<span class="n">Y_holdout</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="p">(</span><span class="nf">runif</span><span class="p">(</span><span class="n">n_holdout</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">probs_holdout</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">1.0</span>
+</code></pre></div>
+
+<p>We can empirically estimate the Bayes error rate based on the data.
+This, based on the data-generating model, is the smallest possible error
+for a model based on the data. What this means is that if you computed
+the optimal logistic regression for this data, it would have at least
+that much error.</p>
+<div class="highlight"><pre><span></span><code><span class="n">bayes_error</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">mean</span><span class="p">((</span><span class="n">probs_holdout</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">.</span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="p">(</span><span class="n">Y_holdout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">))</span>
+</code></pre></div>
+
+<p>In this case the error is <strong>0.3205</strong>.</p>
+<p>Before we start the experiment, Bates designed the package to use
+misclass loss, fitter, and predictor functions in order for it to be
+modular. We need to define those functions first.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># misclass: returns a vector of incorrectly classified values (1 if misclassed)</span>
+<span class="n">misclass_loss</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">y_hat</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">funcs_params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">){</span>
+<span class="w">    </span><span class="n">y_hat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">round</span><span class="p">(</span><span class="n">y_hat</span><span class="p">)</span>
+<span class="w">    </span><span class="n">y_hat</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">y</span>
+<span class="p">}</span>
+
+<span class="c1"># fitter: takes in X, Y, specified indexes of each, returns a fitted logit</span>
+<span class="n">fitter_logistic</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">funcs_params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">fit</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">glm</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="p">],</span><span class="w"> </span><span class="n">family</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">binomial</span><span class="p">(</span><span class="n">link</span><span class="o">=</span><span class="s">"logit"</span><span class="p">))</span>
+<span class="p">}</span>
+
+<span class="c1"># predictor: takes in fitted model, X_new, returns predictions for Y_new</span>
+<span class="n">predictor_logistic</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">fit</span><span class="p">,</span><span class="w"> </span><span class="n">X_new</span><span class="p">,</span><span class="w"> </span><span class="n">funcs_params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">){</span>
+<span class="w">    </span><span class="n">probs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">/</span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="o">-</span><span class="n">X_new</span><span class="w"> </span><span class="o">%*%</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">coefficients</span><span class="p">[</span><span class="m">-1</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">coefficients</span><span class="p">[</span><span class="m">1</span><span class="p">]))</span>
+
+<span class="w">    </span><span class="n">probs</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">.</span><span class="m">5</span>
+<span class="p">}</span>
+
+<span class="n">logistic_funs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">fitter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fitter_logistic</span><span class="p">,</span>
+<span class="w">                 </span><span class="n">predictor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">predictor_logistic</span><span class="p">,</span>
+<span class="w">                 </span><span class="n">loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">misclass_loss</span><span class="p">)</span>
+</code></pre></div>
+
+<p>We then run the experiment, testing both strength levels.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># need to register multicore processing</span>
+<span class="nf">registerDoParallel</span><span class="p">(</span><span class="m">6</span><span class="p">)</span>
+
+<span class="c1"># loop through both strength levels</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="s">"Starting run: "</span><span class="p">,</span><span class="w"> </span><span class="n">strength</span><span class="p">))</span>
+<span class="n">beta</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">))</span>
+<span class="n">beta</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">beta</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">strength</span>
+
+<span class="n">probs_holdout</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="o">-</span><span class="n">X_holdout</span><span class="w"> </span><span class="o">%*%</span><span class="w"> </span><span class="n">beta</span><span class="p">))</span>
+<span class="n">Y_holdout</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="p">(</span><span class="nf">runif</span><span class="p">(</span><span class="n">n_holdout</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">probs_holdout</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">1.0</span>
+
+
+<span class="nf">set.seed</span><span class="p">(</span><span class="m">100</span><span class="p">)</span>
+<span class="n">out</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ncv_simulator</span><span class="p">(</span><span class="n">X_holdout</span><span class="p">,</span><span class="w"> </span><span class="n">Y_holdout</span><span class="p">,</span>
+<span class="n">fun_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+<span class="n">logistic_funs</span>
+<span class="p">),</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">n_folds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                    </span><span class="n">double_cv_reps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">200</span><span class="p">,</span><span class="w"> </span><span class="n">n_cores</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="n">n_sim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"log_reg"</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">do_cv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">T</span><span class="p">,</span><span class="w"> </span><span class="n">do_ncv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">T</span><span class="p">,</span><span class="w"> </span><span class="n">do_boot632</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">F</span><span class="p">)</span>
+
+<span class="nf">save</span><span class="p">(</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="s">"1_cross_validation/lowd_logistic_s-"</span><span class="p">,</span><span class="w"> </span><span class="n">strength</span><span class="p">,</span><span class="s">"_ds.RData"</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="s">"Results saved to disk."</span><span class="p">))</span>
+<span class="nf">stopImplicitCluster</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="" src="1_cross_validation_files/figure-commonmark/unnamed-chunk-8-1.png" /></p>]]></content>
+    
+  </entry>
+  
+
+  
+</feed>
